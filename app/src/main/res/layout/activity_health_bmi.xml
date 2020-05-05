@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#86DEF1DC"
+    android:gravity="center"
+    tools:context=".BMIHealthActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Height (cm)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvtTinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHeight"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Ketinggian (cm)"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etHeight"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Weight (kg)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBerat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWeight"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Berat (kg)"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvtTinggi"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:gravity="top"
+                android:inputType="number|numberDecimal"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBerat"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:gravity="top"
+                android:inputType="number|numberDecimal"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCalc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etWeight"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp"
+                android:background="#DEF1DC"
+                android:onClick="bmiCalculator"
+                android:text="Calculate"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+</ScrollView>

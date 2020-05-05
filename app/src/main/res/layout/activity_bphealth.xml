@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDC7DA"
+    android:gravity="center"
+    tools:context=".BPHealthActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvBloodTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Systolic mmHg \n(Upper Number)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBloodTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBloodTop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ems="6"
+            android:gravity="top"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvBloodLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etBloodTop"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Diastolic mmHg \n(Lower Number)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBloodLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBloodLow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ems="6"
+            android:gravity="top"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etBloodLow"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:background="#FC9FC2"
+            android:onClick="bpCalculator"
+            android:text="Calculate"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/bpResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCalc"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Blood Pressure Result"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

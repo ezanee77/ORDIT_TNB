@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComplaintActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+      <TextView
+          android:id="@+id/tvName"
+          android:layout_width="85dp"
+          android:layout_height="wrap_content"
+          android:text="Name:"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/etName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter your Full Name"
+          android:inputType="text"
+          android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+      <TextView
+          android:id="@+id/tvstaffID"
+          android:layout_width="85dp"
+          android:layout_height="wrap_content"
+          android:text="Staff ID: "
+          android:textSize="20sp"
+          android:textStyle="bold"/>
+
+      <EditText
+          android:id="@+id/etstaffID"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter your Staff ID"
+          android:inputType="number"
+          android:textSize="20sp" />
+    </LinearLayout>
+
+
+     <!--<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvbodyPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select which body parts experience pain: "
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvbodyParts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You may choose more then 1 option "
+            android:textSize="10sp"
+            android:textStyle="italic"/>
+
+      </LinearLayout>-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please tell us which part of your body experience pain:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sila nyatakan bahagian badan yang anda sakit:"
+            android:textSize="10sp"
+            android:textStyle="italic"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/etbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99A9A9A9"
+            android:inputType="textMultiLine"
+            android:hint="Type Here..."
+            android:gravity="top|left"
+            android:lines="10"
+            android:minLines="5"
+            android:maxLines="15"/>
+
+      </LinearLayout>
+
+      <!--<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cbShoulder"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Shoulder"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+        <CheckBox
+            android:id="@+id/cbElbow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elbow"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cbWrist"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Wrist / Hand"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+        <CheckBox
+            android:id="@+id/cbUpperBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upper Back"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cbLowerBack"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Lower Back"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+        <CheckBox
+            android:id="@+id/cbHip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hip / Tigh"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cbKnee"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Knee"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+        <CheckBox
+            android:id="@+id/cbAnkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ankle / Feet"
+            android:textSize="20sp"
+            android:onClick="checked"/>
+
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+          <CheckBox
+              android:id="@+id/cbNeck"
+              android:layout_width="185dp"
+              android:layout_height="wrap_content"
+              android:text="Neck"
+              android:textSize="20sp"
+              android:onClick="checked"/>
+-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Other Impact that caused by the pain:"
+              android:textSize="20sp"
+              android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sakit badan menyebabkan saya...:"
+            android:textSize="10sp"
+            android:textStyle="italic"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+          <EditText
+              android:id="@+id/etOthers"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#99A9A9A9"
+              android:inputType="textMultiLine"
+              android:hint="Type Here..."
+              android:gravity="top|left"
+              android:lines="10"
+              android:minLines="5"
+              android:maxLines="15"/>
+
+      </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+      <Button
+          android:id="@+id/btnSave"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:background="#99EEEEEE"
+          android:text="Submit"
+          android:textColor="#000000" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:background="#ededee"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/ordit_other_bck">
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="15dp"
+        android:rowCount="2"
+        android:layout_weight="7">
+
+        <!--Row 1-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1.75"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/health_icon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Basic Health Info"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Row 2-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1.75"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ergonomics_assicon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Ergonomics Assessment"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Row 3-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1.75"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/complaint_form2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Complaining Form"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Row 4-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1.75"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/vec_icon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Visual Ergonomic Card"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FF4A4A"
+        android:text="Logout"/>
+
+</LinearLayout>

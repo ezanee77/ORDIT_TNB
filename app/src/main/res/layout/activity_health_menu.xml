@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".HealthMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/HealthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Row BMI-->
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:backgroundTint="#C8FCCB">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Body Mass Index"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <!--Row Waist to hip-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:backgroundTint="#EEC8F8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWTH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Waist to Hip Ratio"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Blood Pressure-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:backgroundTint="#F583B1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Blood Pressure"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Sugar Level-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:backgroundTint="#FFC107">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sugar Level"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Heart Rate-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            android:backgroundTint="#CCF5FA">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Heart Rate"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

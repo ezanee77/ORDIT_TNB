@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ORDIT_TNB</string>
+
+    <string name="registration_success">Successfully registered!</string>
+
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Overweight. Do seek doctor advice on the best way to reduce weight and possibility of health risk based on your health assessment.</string>
+    <string name="obese">Obese. Do seek doctor advice on the best way to reduce weight and possibility of health risk based on your health assessment.</string>
+    <string name="extremely_obese">Extremely Obese. Do seek doctor advice on the best way to reduce weight and possibility of health risk based on your health assessment.</string>
+
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="moderate">Moderate</string>
+    <string name="at_risk">At Risk. Do seek doctor advice o the best way to reduce any health risk based on your health assessment.</string>
+    <string name="high_risk">High Risk. Do seek doctor advice o the best way to reduce any health risk based on your health assessment.</string>
+
+    <string name="bp_normal">Normal</string>
+    <string name="elevated">Elevated</string>
+    <string name="stage_one">High Blood Pressure (Hypertension) Stage 1</string>
+    <string name="stage_two">High Blood Pressure (Hypertension) Stage 2</string>
+    <string name="stage_three">High Blood Pressure (Hypertension) Stage 3</string>
+
+    <string name="glucose_normal">Normal</string>
+    <string name="prediabetes">Pre-diabetes. Do seek doctor advice on the proper treatment to reduce glucose level in blood.</string>
+    <string name="diabetes">Diabetes. Do seek doctor advice on the proper treatment to reduce glucose level in blood.</string>
+
+    <string name="athlete">Athlete</string>
+    <string name="heart_excellent">Excellent</string>
+    <string name="heart_good">Good</string>
+    <string name="heart_abv_av">Above Average</string>
+    <string name="heart_av">Average</string>
+    <string name="heart_blw_av">Below Average</string>
+    <string name="heart_poor">Poor. Look out for other symptoms such as being short of breath, feeling dizzy, having discomfort in your chest. You should visit your doctor immediately for health assessment and treatment.</string>
+
+    <string name="job_prompt">Select Job Position</string>
+
+    <array name="ergonomic_form">
+        <item>Executive</item>
+        <item>Technician</item>
+        <item>Engineer</item>
+        <item>Mechanics</item>
+        <item>Control Room Operator</item>
+    </array>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "628228284569",
+    "firebase_url": "https://ordit-eb66f.firebaseio.com",
+    "project_id": "ordit-eb66f",
+    "storage_bucket": "ordit-eb66f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628228284569:android:b50739b47b41b50fe0d808",
+        "android_client_info": {
+          "package_name": "com.lts.ordit_tnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628228284569-vosdfkklemlj3ntpnugn4kppaqk8l0f9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lts.ordit_tnb",
+            "certificate_hash": "7bf7c8d0d27c6fd195363c8ed298788c29bbd22a"
+          }
+        },
+        {
+          "client_id": "628228284569-5hf79b0krasfm2h4sibtsos4h3nd3bk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdsZ6v8FAnYnxaW2twO8EdUv550yAMmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628228284569-5hf79b0krasfm2h4sibtsos4h3nd3bk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

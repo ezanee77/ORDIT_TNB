@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AAF3FC"
+    android:layout_gravity="center"
+    tools:context=".HeartHealthActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvGender"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="false"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rgGender"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Age"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAge"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ems="6"
+            android:gravity="top"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvHeart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAge"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Resting Heart Rate (per minute)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etHeart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHeart"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ems="6"
+            android:gravity="top"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/heartResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCalc"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Heart Rate Result"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etHeart"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:background="#45EAFD"
+            android:onClick="heartCalculator"
+            android:text="Calculate"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
