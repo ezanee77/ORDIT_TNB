@@ -12,8 +12,8 @@
     <string name="excellent">Excellent</string>
     <string name="good">Good</string>
     <string name="moderate">Moderate</string>
-    <string name="at_risk">At Risk. Do seek doctor advice o the best way to reduce any health risk based on your health assessment.</string>
-    <string name="high_risk">High Risk. Do seek doctor advice o the best way to reduce any health risk based on your health assessment.</string>
+    <string name="at_risk">At Risk. Do seek doctor advice on the best way to reduce any health risk based on your health assessment.</string>
+    <string name="high_risk">High Risk. Do seek doctor advice on the best way to reduce any health risk based on your health assessment.</string>
 
     <string name="bp_normal">Normal</string>
     <string name="elevated">Elevated</string>

@@ -70,7 +70,7 @@
             android:layout_marginTop="30dp"
             android:layout_below="@id/rgGender"
             android:gravity="center"
-            android:text="Wais (cm)t"
+            android:text="Waist (cm)"
             android:textSize="20sp"
             android:textStyle="bold" />
 
