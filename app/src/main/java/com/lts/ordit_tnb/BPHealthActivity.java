@@ -61,7 +61,7 @@ public class BPHealthActivity extends Activity {
 
     public void bpCalculator (View v){
 
-        bpcaculation();
+        bpCalculator();
         addBp();
 
     }
