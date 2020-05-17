@@ -96,7 +96,7 @@ public class BPHealthActivity extends Activity {
     }
 
 
-    private void bpcaculation() {
+    private void bpCalculator() {
 
         String blood_topStr = blood_top.getText().toString();
         String blood_lowStr = blood_low.getText().toString();
