@@ -8,20 +8,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:628228284569:android:b50739b47b41b50fe0d808",
+        "mobilesdk_app_id": "1:628228284569:android:8d286509d7749f7fe0d808",
         "android_client_info": {
-          "package_name": "com.lts.ordit_tnb"
+          "package_name": "com.tnb.ordit"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "628228284569-vosdfkklemlj3ntpnugn4kppaqk8l0f9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.lts.ordit_tnb",
-            "certificate_hash": "7bf7c8d0d27c6fd195363c8ed298788c29bbd22a"
-          }
-        },
         {
           "client_id": "628228284569-5hf79b0krasfm2h4sibtsos4h3nd3bk3.apps.googleusercontent.com",
           "client_type": 3
